@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Suspense } from "react"
+import CreateHomeButton from "@/components/create-home-button"
 
 export const metadata: Metadata = {
   title: "Blog/Project Showcase",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <SiteFooter />
             </Suspense>
           </div>
+          <CreateHomeButton />
         </ThemeProvider>
         <Analytics />
       </body>
